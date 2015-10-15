@@ -1,0 +1,20 @@
+.back, .clicked {
+  height: 150px;
+  width: 150px;
+  background-color: blue;
+  display: inline-block;
+  border: 2px solid black;
+  margin: 2px;
+}
+
+.complete {
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  display: inline-block;
+  margin: 4px;
+}
+
+.hidden {
+  display: none;
+}
