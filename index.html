@@ -4,11 +4,26 @@
   <meta charset="UTF-8">
   <title>Memory Game</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 </head>
 <body>
-  <input type="text" class="hashtag" placeholder="subject"></input>
-  <button class="hashtag">Submit</button>
+  <input type="text" class="pregame text" placeholder="subject">
+  <button class="hashtag pregame">Submit</button>
+  <input type="radio" class="pregame" value="4" name="GameSize" checked="true">
+  <p class="radio pregame">Tiny</p>
+  <input type="radio" class="pregame" value="8" name="GameSize">
+    <p class="radio pregame">Small</p>
+  <input type="radio" class="pregame" value="12" name="GameSize">
+    <p class="radio pregame">Medium</p>
+  <input type="radio" class="pregame" value="16" name="GameSize">
+    <p class="radio pregame">Large</p>
+  <input type="radio" class="pregame" value="20" name="GameSize">
+    <p class="radio pregame">Giant</p>
+  <button class="reset gameInProcess hidden">Reset</button>
+  <p class="gameInProcess hidden">Attempted matches</p>
+  <p class="gameInProcess hidden attempts">0</p>
+  <p class="gameInProcess hidden ">Total Matches</p>
+  <p class="gameInProcess hidden matches">0</p>
   <div class="game-board"></div>
   <script src="game.js"></script>
 </body>

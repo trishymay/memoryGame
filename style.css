@@ -1,10 +1,19 @@
-.back, .clicked {
+.card {
   height: 150px;
   width: 150px;
-  background-color: blue;
+  background-color: red;
   display: inline-block;
   border: 2px solid black;
   margin: 2px;
+}
+
+.clicked {
+  height: 150px;
+  width: 150px;
+  background-color: yellow;
+  display: inline-block;
+  border: 2px solid black;
+  padding: 2px;
 }
 
 .complete {
@@ -17,4 +26,16 @@
 
 .hidden {
   display: none;
+}
+
+p, button {
+  display: inline-block;
+}
+
+.win {
+  display: block;
+
+}
+.radio {
+  display: inline-block;
 }
