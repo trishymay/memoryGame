@@ -3,7 +3,7 @@ var allCards = [];
 var totalTries = 0;
 var totalMatched = 0;
 var boardSize;
-var errorMsg = "<h1>Error: This topic is not allowed.  Please choose a different subject.</h1>";
+var errorMsg = "<h1 class='error'>This subject returned no images.  Please try another subject.</h1>";
 var testing;
 
 $(".hashtag").click(startGame);
@@ -23,7 +23,7 @@ function startGame () {
     cache: false,
     url: "https://api.instagram.com/v1/tags/" + hashtag + "/media/recent?client_id=4a059e7a3f9d4870ac229cb32f390a91",
     success: function(data) {
-      if (data.meta.code === 200) {
+      if (data.data && data.data.length === 20) {
         var cards = "";
         var indexNums = [];
         for(var i = 0; i < boardSize; i++) {
