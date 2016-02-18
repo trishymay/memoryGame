@@ -1,0 +1,120 @@
+body {
+  background-color: gray;
+}
+
+.card {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  display: inline-block;
+  border: 2px solid black;
+  margin: 5px;
+}
+
+.clicked {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  display: inline-block;
+  border: 2px solid black;
+  margin: 5px;
+}
+
+.complete {
+  height: 100px;
+  width: 100px;
+  background-color: gray;
+  display: inline-block;
+  margin: 5px;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+p {
+  font-family: 'Schoolbell', cursive;
+  display: inline-block;
+}
+
+button {
+  display: inline-block;
+  background-color: black;
+  color: red;
+  font-size: 16px;
+  font-family: 'Schoolbell', cursive;
+}
+
+.win {
+  display: block;
+  font-size: 40px;
+  font-family: 'Schoolbell', cursive;
+  text-align: center;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.game-board {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.sidebar {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.gameInProcess {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.num {
+  margin-top: 0;
+}
+
+.top {
+  vertical-align: top;
+}
+
+.pregame {
+  margin-right: 20px;
+}
+
+.radio-button {
+  margin-right: 3px;
+}
+
+div.title {
+  vertical-align: top;
+  background-color: black;
+}
+
+h1.title, h3 {
+  display: inline-block;
+  width: 45%;
+  margin: 20px;
+  font-family: 'Schoolbell', cursive;
+  color: red;
+}
+
+h1 {
+  text-align: right;
+}
+
+h3 {
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}
+
+
