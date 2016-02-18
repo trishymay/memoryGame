@@ -105,6 +105,10 @@ h1.title, h3 {
   color: red;
 }
 
+h1.error {
+  text-align: center;
+}
+
 h1 {
   text-align: right;
 }
