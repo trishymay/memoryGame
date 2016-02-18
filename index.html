@@ -5,25 +5,34 @@
   <title>Memory Game</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Schoolbell' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <input type="text" class="pregame text" placeholder="subject">
-  <button class="hashtag pregame">Submit</button>
-  <input type="radio" class="pregame" value="4" name="GameSize" checked="true">
-  <p class="radio pregame">Tiny</p>
-  <input type="radio" class="pregame" value="8" name="GameSize">
-    <p class="radio pregame">Small</p>
-  <input type="radio" class="pregame" value="12" name="GameSize">
-    <p class="radio pregame">Medium</p>
-  <input type="radio" class="pregame" value="16" name="GameSize">
-    <p class="radio pregame">Large</p>
-  <input type="radio" class="pregame" value="20" name="GameSize">
-    <p class="radio pregame">Giant</p>
-  <button class="reset gameInProcess hidden">Reset</button>
-  <p class="gameInProcess hidden">Attempted matches</p>
-  <p class="gameInProcess hidden attempts">0</p>
-  <p class="gameInProcess hidden ">Total Matches</p>
-  <p class="gameInProcess hidden matches">0</p>
+  <div class="title">
+    <h1 class="title">Where Was It?</h1>
+    <h3 class="title">A memory matching game</h3>
+  </div>
+  <div class="top">
+    <input type="text" class="pregame text" placeholder="subject">
+    <button class="hashtag pregame">Submit</button>
+    <input type="radio" class="pregame radio-button" value="4" name="GameSize" checked="true">
+    <p class="radio-text pregame">Tiny</p>
+    <input type="radio" class="pregame radio-button" value="8" name="GameSize">
+      <p class="radio-text pregame">Small</p>
+    <input type="radio" class="pregame radio-button" value="12" name="GameSize">
+      <p class="radio-text pregame">Medium</p>
+    <input type="radio" class="pregame radio-button" value="16" name="GameSize">
+      <p class="radio-text pregame">Large</p>
+    <input type="radio" class="pregame radio-button" value="20" name="GameSize">
+      <p class="radio-text pregame">Giant</p>
+  </div>
+  <div class="sidebar">
+    <button class="reset gameInProcess hidden">Reset</button>
+    <p class="gameInProcess hidden">Attempted matches</p>
+    <p class="gameInProcess num hidden attempts">0</p>
+    <p class="gameInProcess hidden ">Total Matches</p>
+    <p class="gameInProcess num hidden matches">0</p>
+  </div>
   <div class="game-board"></div>
   <script src="game.js"></script>
 </body>

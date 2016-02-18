@@ -35,6 +35,12 @@ function startGame () {
           cards += "<div class='card'><img class='hidden' src='" + allCards[indexNums.pop()].url + "'></div>";
         }
         $("div.game-board").html(cards);
+        var h = getHeight();
+        var w = getWidth();
+        console.log(h, w);
+        $("div.game-board").height(h);
+        $("div.game-board").width(w);
+        $("div.sidebar").height(h);
       }
     }
   });
@@ -45,7 +51,7 @@ function startGame () {
       listen();
     } else {
       reset();
-      $("div.game-board").html(errorMsg).removeClass("hidden");
+      $("div.game-board").html(errorMsg).width("460").removeClass("hidden");
     }
   });
 }
@@ -60,6 +66,18 @@ function shuffle(array) {
     array[i] = t;
   }
   return array;
+}
+
+function getHeight() {
+  if (boardSize === 4) return 230;
+  if (boardSize === 20) return 575;
+  return 460;
+}
+
+function getWidth() {
+  if (boardSize === 4 || boardSize === 8) return 460;
+  if (boardSize === 12) return 690;
+  return 920;
 }
 
 function listen() {
@@ -122,19 +140,21 @@ function compare() {
 }
 
 function win() {
-  var winner = '<p class="win">Congratulations!  You won!!</p>';
+  var winner = '<p class="win">Congratulations!<br>You won!!</p>';
   $("div.game-board").html(winner);
 }
 
 function reset() {
-  $("div.game-board").empty();
-  $(".pregame").show();
-  $(".gameInProcess").addClass("hidden");
-  $("input.text").val("");
   current = [];
   allCards = [];
   totalTries = 0;
   totalMatched = 0;
+  $("div.game-board").empty();
+  $(".pregame").show();
+  $(".gameInProcess").addClass("hidden");
+  $("input.text").val("");
+  $(".attempts").html(totalTries);
+  $(".matches").html(totalMatched);
 }
 
 
